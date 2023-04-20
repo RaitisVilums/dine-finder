@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  background: var(--color-primary);
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow-medium);
+  font-family: var(--ff-secondary);
+  z-index: 2;
+
+  &__helper {
+    width: 100%;
+    max-width: 144rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

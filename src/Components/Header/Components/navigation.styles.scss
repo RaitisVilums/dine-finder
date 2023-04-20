@@ -1,0 +1,22 @@
+.navigation {
+  font-family: var(--ff-secondary);
+  &__wrapper {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+  }
+
+  &__wrapper--item {
+    font-size: var(--fs-default);
+    color: var(--color-tertiary-1);
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    padding: 2rem;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
+}

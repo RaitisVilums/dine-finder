@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  // ! Colors
+  --color-primary: #1a4772;
+  --color-secondary: #fdba44; // CTA / highlight / buttons
+  --color-tertiary-1: #f2f2f2; // Background / borders /
+  --color-tertiary-2: #b3b3b3;
+  --color-tertiary-3: #808080;
+  --color-accent: #1ab3a9;
+
+  //   ! Box-shadows
+  --box-shadow-soft: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
+  --box-shadow-medium: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.2);
+  --box-shadow-elevated: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
+
+  //   ! Font family
+  --ff-primary: "Nunito Sans", sans-serif;
+  --ff-secondary: "Roboto", sans-serif;
+
+  //   ! Font Weights
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+
+  //   ! Font sizes
+  --fs-small: 1rem;
+  --fs-default: 1.4rem;
+  --fs-large: 1.8rem;
+  --fs-xlarge: 2.4rem;
+  --fs-xxlarge: 3.2rem;
+  --fs-xxxlarge: 4.8rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--color-tertiary-1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

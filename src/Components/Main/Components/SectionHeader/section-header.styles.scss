@@ -1,0 +1,56 @@
+.main {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 10rem;
+    position: relative;
+  }
+  &__header--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+  }
+
+  &__header--title {
+    font-size: var(--fs-xxlarge);
+    font-weight: var(--fw-medium);
+    color: var(--color-primary);
+
+    & span {
+      font-weight: var(--fw-bold);
+      text-decoration: underline;
+    }
+  }
+  &__header--slogan {
+    font-size: var(--fs-xlarge);
+    color: var(--color-primary);
+  }
+
+  &__header--description {
+    font-size: var(--fs-large);
+    text-align: justify;
+    & span {
+      font-weight: var(--fw-bold);
+      color: var(--color-primary);
+      text-decoration: underline;
+      font-size: 2.2rem;
+    }
+  }
+
+  &__header--image {
+    width: 55rem;
+    height: 45rem;
+    box-shadow: var(--box-shadow-elevated);
+    border-radius: 1.5rem;
+    & img {
+      border-radius: 1.5rem;
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+      box-shadow: var(--box-shadow-elevated);
+    }
+  }
+}

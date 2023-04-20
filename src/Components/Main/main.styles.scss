@@ -1,0 +1,34 @@
+// ! Styles for Process Section of Main Page
+
+.rotation-1 {
+  transform: rotate(0deg);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.rotation-2 {
+  transform: rotate(90deg);
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.rotation-3 {
+  transform: rotate(180deg);
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.rotation-4 {
+  transform: rotate(270deg);
+
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.dummy {
+  fill: transparent;
+}
+
+.mrg-btm {
+  margin-bottom: 2rem;
+}

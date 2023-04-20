@@ -1,0 +1,47 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+
+  &__title {
+    font-size: var(--fs-xxlarge);
+    color: var(--color-primary);
+  }
+
+  &__container {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  &__container--item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50rem;
+    & img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      border: 1px solid var(--color-accent);
+    }
+  }
+
+  &__container--item__title {
+    font-size: var(--fs-large);
+    color: var(--color-primary);
+  }
+
+  &__container--item__description {
+    font-size: var(--fs-default);
+    text-align: justify;
+  }
+
+  &__container--icon {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--color-primary);
+  }
+}
