@@ -53,6 +53,11 @@
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
+    align-items: center;
+
+    & p {
+      font-size: var(--fs-small);
+    }
   }
   &__container--item__description {
     font-size: var(--fs-default);

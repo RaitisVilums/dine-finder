@@ -300,7 +300,7 @@
     "type": "Restaurant",
     "id": 10,
     "isOpen": true,
-    "promo": false,
+    "promo": true,
     "foodImages": [],
     "interiorImages": [],
     "reviewsCount": 0,

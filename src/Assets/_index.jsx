@@ -14,6 +14,10 @@ import { ReactComponent as Next } from "./next.svg";
 import { ReactComponent as Prev } from "./back.svg";
 import { ReactComponent as ArrowDown } from "./arrow-down.svg";
 import { ReactComponent as Filter } from "./filter.svg";
+import { ReactComponent as FilledStar } from "./fullstar.svg";
+import { ReactComponent as HalfStar } from "./halfstar.svg";
+import { ReactComponent as EmptyStar } from "./emptystar.svg";
+
 export {
   ArrowLeft,
   ArrowRight,
@@ -31,4 +35,7 @@ export {
   Prev,
   ArrowDown,
   Filter,
+  FilledStar,
+  HalfStar,
+  EmptyStar,
 };

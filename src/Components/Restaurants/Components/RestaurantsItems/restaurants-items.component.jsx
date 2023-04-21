@@ -1,7 +1,7 @@
 import "./restaurants-items.styles.scss";
 import { Link } from "react-router-dom";
 import Restaurant from "../../../../Assets/restaurant.jpg";
-
+import Rating from "../../../Common/Rating/rating";
 const RestaurantsItems = ({ data }) => {
   const { name, isOpen, rating, reviewsCount, attributes, id, description } =
     data;
@@ -20,7 +20,8 @@ const RestaurantsItems = ({ data }) => {
       <div className="restaurants__container--item__content">
         <h2 className="restaurants__container--item__title">{name}</h2>
         <div className="restaurants__container--item__rating">
-          <p>{rating}</p> <p>{reviewsCount}</p>
+          <Rating rating={rating} />
+          <p>Reviews - {reviewsCount}</p>
         </div>
         <p className="restaurants__container--item__description">
           {description}

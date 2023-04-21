@@ -6,12 +6,13 @@ import Main from "./Components/Main/main.component";
 import About from "./Components/About/about.component";
 import Pricing from "./Components/Pricing/pricing.component";
 import Restaurants from "./Components/Restaurants/restaurants.component";
+import Login from "./Components/Login/login.component";
 const App = () => {
   return (
     <Routes>
       <Route exact path="/" element={<MainPage />}>
         <Route path="/" element={<Main />} />
-        <Route path="/login" />
+        <Route path="/login" element={<Login />} />
         <Route path="/register" />
         <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
