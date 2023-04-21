@@ -1,0 +1,32 @@
+.restaurants {
+  &__header {
+    display: flex;
+    gap: 2rem;
+
+    align-items: center;
+  }
+
+  &__header--search {
+    position: relative;
+  }
+
+  &__header--search__input {
+    width: 30rem;
+    padding: 1rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 0.5rem;
+    outline: none;
+    font-family: inherit;
+    font-size: var(--fs-default);
+    transition: 0.2s all ease-in-out;
+
+    &:focus {
+      border: 1px solid var(--color-accent);
+    }
+  }
+
+  &__header--search__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

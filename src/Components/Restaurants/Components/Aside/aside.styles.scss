@@ -1,0 +1,90 @@
+.restaurants {
+  &__promotions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid var(--color-tertiary-2);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow-medium);
+    flex-grow: 1;
+
+    & hr {
+      width: 100%;
+      background: var(--color-tertiary-2);
+    }
+  }
+
+  &__promotions--title {
+    font-size: var(--fs-xlarge);
+    color: var(--color-primary);
+  }
+
+  &__promotions--item {
+    width: 30rem;
+    height: 25rem;
+    position: relative;
+    border-radius: 1.5rem;
+
+    & img {
+      width: inherit;
+      height: inherit;
+      border-radius: 1.5rem;
+      position: absolute;
+      z-index: -2;
+    }
+  }
+
+  &__promotions--item__backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.2) 14.06%,
+      rgba(0, 0, 0, 0.2) 46.35%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    border-radius: 1.5rem;
+  }
+  &__promotions--item__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  &__poromotions--item__title {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: var(--fs-large);
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+  }
+  &__poromotions--item__rating {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    color: wheat;
+  }
+  &__poromotions--item__promo {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: var(--color-secondary);
+    box-shadow: var(--box-shadow-soft);
+    color: white;
+    font-size: var(--fs-default);
+    font-weight: var(--fw-bold);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
