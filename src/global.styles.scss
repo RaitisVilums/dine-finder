@@ -47,9 +47,19 @@ html {
 
 body {
   background: var(--color-tertiary-1);
+  min-height: 100vh;
+  position: relative;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }

@@ -7,18 +7,19 @@ import About from "./Components/About/about.component";
 import Pricing from "./Components/Pricing/pricing.component";
 import Restaurants from "./Components/Restaurants/restaurants.component";
 import Login from "./Components/Login/login.component";
+import Register from "./Components/Register/register.component";
+import Restaurant from "./Components/Restaurant/restaurant.component";
 const App = () => {
   return (
     <Routes>
       <Route exact path="/" element={<MainPage />}>
         <Route path="/" element={<Main />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" />
+        <Route path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
-        <Route path="/restaurants" element={<Restaurants />}>
-          <Route path=":id" />
-        </Route>
+        <Route path="/restaurants" element={<Restaurants />} />
+        <Route path="/restaurants/:id" element={<Restaurant />} />
       </Route>
     </Routes>
   );

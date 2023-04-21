@@ -40,7 +40,7 @@ const RestaurantsItems = ({ data }) => {
           </ol>
           <Link
             className="btn btn-primary restaurants__container--item__link"
-            to={`${id}`}
+            to={`/restaurants/${id}`}
           >
             view
           </Link>
