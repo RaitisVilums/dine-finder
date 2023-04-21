@@ -47,7 +47,6 @@
     align-items: center;
   }
   &__container--item {
-    position: relative;
     display: flex;
     height: 25rem;
     border-radius: 1.5rem;
@@ -59,9 +58,6 @@
       height: 100%;
       border-radius: 1.5rem 0 0 1.5rem;
     }
-  }
-
-  &__container--item__link {
   }
 
   &__container--item__content {
