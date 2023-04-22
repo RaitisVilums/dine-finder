@@ -1,0 +1,114 @@
+.restaurant {
+  &__info {
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & img {
+      width: 100%;
+      height: 35rem;
+    }
+  }
+  &__info--container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__info--title {
+    font-size: var(--fs-xxlarge);
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+  &__info--rating {
+    padding: 0.5rem;
+    border: 1px solid var(--color-tertiary-2);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info--cta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__info--isopen {
+    padding: 0.5rem;
+    background-color: var(--color-secondary);
+    border-radius: 0.5rem;
+    font-size: var(--fs-default);
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    color: white;
+    border: 1px solid var(--color-tertiary-2);
+  }
+
+  &__info--isclosed {
+    padding: 0.5rem;
+    background-color: var(--color-tertiary-2);
+    border-radius: 0.5rem;
+    font-size: var(--fs-default);
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    color: white;
+    border: 1px solid var(--color-tertiary-2);
+  }
+
+  &__info--image {
+    display: flex;
+    & img {
+      width: 30rem;
+      height: 30rem;
+      border-radius: 1.5rem 0 0 1.5rem;
+    }
+  }
+
+  &__info--image__content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  &__info--description {
+    border: 1px solid var(--color-tertiary-2);
+    border-radius: 1.5rem;
+    font-size: var(--fs-default);
+    color: var(--color--primary);
+    text-align: justify;
+  }
+
+  &__info--image__conent--attributes {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+
+    & li {
+      padding: 0.5rem;
+      background-color: var(--color-secondary);
+      border-radius: 0.5rem;
+      font-size: var(--fs-default);
+      color: white;
+      border: 1px solid var(--color-tertiary-2);
+    }
+  }
+}
+
+.slogan {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.description {
+  height: 100%;
+  max-height: 18rem;
+  overflow-y: auto;
+}
