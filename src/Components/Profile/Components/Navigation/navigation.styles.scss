@@ -1,0 +1,40 @@
+.profile {
+  &__navigation {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+  }
+  &__navigation--items {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem 0 0 0;
+  }
+  &__navigation--item {
+    width: 100%;
+    padding: 1rem;
+    font-size: var(--fs-large);
+    list-style: none;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    border: 1px solid var(--color-tertiary-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    &:first-child {
+      border-radius: 1.5rem 0 0 0;
+    }
+    &:hover {
+      background: var(--color-secondary);
+      color: white;
+    }
+  }
+  &__navigation--item__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+.active {
+  background: var(--color-secondary);
+  color: white;
+}

@@ -17,6 +17,12 @@ import { ReactComponent as Filter } from "./filter.svg";
 import { ReactComponent as FilledStar } from "./fullstar.svg";
 import { ReactComponent as HalfStar } from "./halfstar.svg";
 import { ReactComponent as EmptyStar } from "./emptystar.svg";
+import { ReactComponent as Twitter } from "./twitter.svg";
+import { ReactComponent as Instagram } from "./instagram.svg";
+import { ReactComponent as TikTok } from "./tiktok.svg";
+import { ReactComponent as Phone } from "./phone.svg";
+import { ReactComponent as WebPage } from "./webpage.svg";
+import { ReactComponent as Location } from "./location.svg";
 
 export {
   ArrowLeft,
@@ -38,4 +44,10 @@ export {
   FilledStar,
   HalfStar,
   EmptyStar,
+  Twitter,
+  TikTok,
+  Instagram,
+  Phone,
+  WebPage,
+  Location,
 };
