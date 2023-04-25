@@ -5,7 +5,7 @@ import { useState } from "react";
 import Logo from "../../Assets/logo.png";
 import { Link } from "react-router-dom";
 const Header = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   return (
     <HeaderWrapper>
       <div className="logo-nav__wrapper">

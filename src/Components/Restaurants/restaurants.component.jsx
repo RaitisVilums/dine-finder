@@ -4,12 +4,16 @@ import MainWrapper from "../Common/Main/main";
 import RestaurantsHeader from "./Components/Header/header.component";
 import RestaurantsItems from "./Components/RestaurantsItems/restaurants-items.component";
 import AsideItems from "./Components/Aside/aside.component";
-import restaurants from "../../Data/dummyData.json";
+import LoadingElement from "./Components/Loading/loading.component";
+
+import { useRestaurants } from "../../Hooks/useContexts.hook";
+import Button from "../Common/Button/button";
 
 const PAGE_SIZE = 3;
 
 const Restaurants = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const { restaurants, isLoading } = useRestaurants();
 
   const startIndex = (currentPage - 1) * PAGE_SIZE;
   const endIndex = startIndex + PAGE_SIZE;
@@ -17,10 +21,34 @@ const Restaurants = () => {
   const displayedRestaurants = restaurants.slice(startIndex, endIndex);
   const totalPages = Math.ceil(restaurants.length / PAGE_SIZE);
 
-  // event handler for page change
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
+
+  if (isLoading)
+    return (
+      <MainWrapper>
+        <section className="restaurants">
+          <RestaurantsHeader />
+          <div className="restaurants__wrapper">
+            <div className="restaurants__container">
+              <LoadingElement />
+              <LoadingElement />
+              <LoadingElement />
+            </div>
+            <aside className="restaurants__promotions">
+              <h1 className="restaurants__promotions--title">
+                Check this out!
+              </h1>
+              <hr />
+              <LoadingElement />
+              <LoadingElement />
+              <LoadingElement />
+            </aside>
+          </div>
+        </section>
+      </MainWrapper>
+    );
 
   return (
     <MainWrapper>
@@ -40,16 +68,16 @@ const Restaurants = () => {
             ))}
           </aside>
         </div>
-        <div className="pagination">
+        <div className="restaurants__pagination">
           {Array.from({ length: totalPages }, (_, index) => index + 1).map(
             (page) => (
-              <button
+              <Button
                 key={page}
                 className={currentPage === page ? "active" : ""}
                 onClick={() => handlePageChange(page)}
               >
                 {page}
-              </button>
+              </Button>
             )
           )}
         </div>

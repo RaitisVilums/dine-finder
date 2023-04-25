@@ -1,0 +1,12 @@
+.restaurants {
+  &__loading {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 25rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--box-shadow-medium);
+    border: 1px solid var(--color-tertiary-2);
+    overflow: hidden;
+  }
+}

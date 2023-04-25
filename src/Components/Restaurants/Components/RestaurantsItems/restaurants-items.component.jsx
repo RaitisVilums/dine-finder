@@ -5,6 +5,7 @@ import Rating from "../../../Common/Rating/rating";
 const RestaurantsItems = ({ data }) => {
   const { name, isOpen, rating, reviewsCount, attributes, id, description } =
     data;
+
   return (
     <div className="restaurants__container--item" key={id}>
       <p

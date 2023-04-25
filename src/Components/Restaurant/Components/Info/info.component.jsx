@@ -2,7 +2,16 @@ import "./info.styles.scss";
 import Rating from "../../../Common/Rating/rating";
 import RestaurantImage from "../../../../Assets/restaurant.jpg";
 import { Link } from "react-router-dom";
-const Info = ({ name, rating, isOpen, slogan, description, attributes }) => {
+const Info = ({
+  name,
+  rating,
+  isOpen,
+  slogan,
+  description,
+  attributes,
+  workingHours,
+}) => {
+  console.log(workingHours);
   return (
     <div className="restaurant__info">
       <div className="restaurant__info--container">
@@ -38,6 +47,13 @@ const Info = ({ name, rating, isOpen, slogan, description, attributes }) => {
                 </li>
               ))}
             </ol>
+          </div>
+          <div className="restaurant__info--image__working-hours">
+            {Object.keys(workingHours).map((day) => (
+              <p key={day}>
+                {day.slice(0, 3)} - {workingHours[day]}
+              </p>
+            ))}
           </div>
         </div>
       </div>

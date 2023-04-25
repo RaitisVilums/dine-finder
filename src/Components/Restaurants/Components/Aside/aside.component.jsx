@@ -15,9 +15,9 @@ const AsideItems = ({ data }) => {
       <Link className="restaurants__promotions--item__link" to={`${id}`} />
       <img src={Restaurant} alt="restaurant" />
       <h1 className="restaurants__poromotions--item__title">{name}</h1>
-      <p className="restaurants__poromotions--item__rating">
+      <div className="restaurants__poromotions--item__rating">
         <Rating rating={rating} />
-      </p>
+      </div>
       <p className="restaurants__poromotions--item__promo">Promo</p>
     </div>
   );

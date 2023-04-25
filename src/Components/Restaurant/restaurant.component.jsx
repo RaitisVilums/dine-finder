@@ -1,22 +1,30 @@
 import "./restaurant.styles.scss";
 import MainWrapper from "../Common/Main/main";
 import { useParams } from "react-router-dom";
-import restaurants from "../../Data/dummyData.json";
 import Gallery from "./Components/Gallery/gallery.component";
 import Info from "./Components/Info/info.component";
 import AsideMap from "./Components/Aside/aside.component";
 import Reviews from "./Components/Reviews/reviews.component";
+import { useRestaurants } from "../../Hooks/useContexts.hook";
+import { useEffect } from "react";
+import LoadingPage from "./Components/Loading/loading.component";
+
 const Restaurant = () => {
   const { id } = useParams();
+  const { fetchRestaurantById, restaurant } = useRestaurants();
 
-  const restaurant = restaurants.find(
-    (restaurant) => restaurant.id === Number(id)
-  );
-
+  useEffect(() => {
+    fetchRestaurantById(id);
+  }, []);
   if (!restaurant) {
-    return <p>Restaurant not found</p>;
+    return (
+      <MainWrapper>
+        <section className="restaurant">
+          <LoadingPage />
+        </section>
+      </MainWrapper>
+    );
   }
-
   const {
     name,
     isOpen,
@@ -28,6 +36,7 @@ const Restaurant = () => {
     phone,
     webpage,
     slogan,
+    workingHours,
   } = restaurant;
 
   return (
@@ -40,6 +49,7 @@ const Restaurant = () => {
           attributes={attributes}
           slogan={slogan}
           description={description}
+          workingHours={workingHours}
         />
         <AsideMap location={location} phone={phone} webpage={webpage} />
         <Gallery />
