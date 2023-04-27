@@ -6,6 +6,7 @@ import ProfilePage from "./Components/Profile/profile.component";
 import Messages from "./Components/Messages/messages.component";
 import Favorites from "./Components/Favorites/favorites.component";
 import Reviews from "./Components/Reviews/reviews.component";
+
 const Profile = () => {
   const [activeTab, setActiveTab] = useState("profile");
 

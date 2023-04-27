@@ -1,0 +1,19 @@
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-tertiary-2);
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: 10rem;
+  font-size: var(--fs-large);
+  border-radius: 1.5rem 0 0 1.5rem;
+  height: 7rem;
+  box-shadow: var(--box-shadow-soft);
+  font-family: var(--ff-secondary);
+  background: var(--color-secondary);
+  color: white;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+}

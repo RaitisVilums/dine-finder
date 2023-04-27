@@ -10,6 +10,7 @@ import Login from "./Components/Login/login.component";
 import Register from "./Components/Register/register.component";
 import Restaurant from "./Components/Restaurant/restaurant.component";
 import Profile from "./Components/Profile/profile.component";
+import Menu from "./Components/Menu/menu.component";
 const App = () => {
   return (
     <Routes>
@@ -20,7 +21,9 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/restaurants" element={<Restaurants />} />
-        <Route path="/restaurants/:id" element={<Restaurant />} />
+        <Route path="/restaurants/:id" element={<Restaurant />}>
+          <Route path="menu" element={<Menu />} />
+        </Route>
         <Route path="/profile" element={<Profile />} />
       </Route>
     </Routes>

@@ -3,12 +3,17 @@ import Restaurant from "../../../../Assets/chew.png";
 import Button from "../../../Common/Button/button";
 import Input from "../../../Common/Input/input";
 import { useState } from "react";
+import { useAuth } from "../../../../Hooks/useContexts.hook";
+import { useNavigate } from "react-router-dom";
 
 const ProfilePage = () => {
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
-  const [email, setEmail] = useState("");
-  const [location, setLocation] = useState("");
+  const navigate = useNavigate();
+  const { logoutUser, userData } = useAuth();
+
+  const [name, setName] = useState(userData.name);
+  const [surname, setSurname] = useState(userData.surname);
+  const [email, setEmail] = useState(userData.email);
+  const [location, setLocation] = useState(userData.location);
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [dateOfBirth, setDateOfBirth] = useState("");
@@ -17,6 +22,10 @@ const ProfilePage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setEditable(false);
+  };
+  const logOutHandler = () => {
+    logoutUser();
+    navigate("/login");
   };
 
   return (
@@ -55,7 +64,9 @@ const ProfilePage = () => {
           >
             Save
           </Button>
-          <Button className={`btn-secondary`}>Log out</Button>
+          <Button className={`btn-secondary`} onClick={() => logOutHandler()}>
+            Log out
+          </Button>
         </div>
         <form className="profile__content--form" onSubmit={handleSubmit}>
           <Input

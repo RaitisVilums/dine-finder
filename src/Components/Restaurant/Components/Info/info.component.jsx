@@ -1,7 +1,7 @@
 import "./info.styles.scss";
 import Rating from "../../../Common/Rating/rating";
 import RestaurantImage from "../../../../Assets/restaurant.jpg";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 const Info = ({
   name,
   rating,
@@ -14,13 +14,16 @@ const Info = ({
   console.log(workingHours);
   return (
     <div className="restaurant__info">
+      <Outlet />
       <div className="restaurant__info--container">
         <h1 className="restaurant__info--title">{name}</h1>
         <div className="restaurant__info--rating">
           <Rating rating={rating} />
         </div>
         <div className="restaurant__info--cta">
-          <Link className="btn btn-primary">Menu</Link>
+          <Link className="btn btn-primary" to={"menu"}>
+            Menu
+          </Link>
           <Link className="btn btn-primary">Book</Link>
           <Link className="btn btn-primary">Review</Link>
         </div>

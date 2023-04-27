@@ -1,6 +1,14 @@
 import "./form-group.styles.scss";
 
-const FormGroup = ({ label, id, name, placeholder, required, type }) => {
+const FormGroup = ({
+  label,
+  id,
+  name,
+  placeholder,
+  required,
+  type,
+  onChange,
+}) => {
   return (
     <div className="form__group">
       <label htmlFor={id} className="visually-hidden">
@@ -12,6 +20,7 @@ const FormGroup = ({ label, id, name, placeholder, required, type }) => {
         name={name}
         placeholder={placeholder}
         required={required}
+        onChange={onChange}
       />
     </div>
   );

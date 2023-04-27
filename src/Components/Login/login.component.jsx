@@ -2,9 +2,40 @@ import "./login.styles.scss";
 import MainWrapper from "../Common/Main/main";
 import Button from "../Common/Button/button";
 import FormGroup from "../Common/FormGroup/form-group";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../Hooks/useContexts.hook";
+import { useState } from "react";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const { loginUser } = useAuth();
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+  const [error, setError] = useState("");
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const { email, password } = formData;
+
+    try {
+      await loginUser(email, password);
+      navigate("/profile");
+    } catch (error) {
+      console.error(`Error - ${error}`);
+      setError(error.message);
+    }
+  };
+
   return (
     <MainWrapper>
       <section className="login">
@@ -12,7 +43,7 @@ const Login = () => {
           Welcome to <span>DineFinder</span>
         </h1>
         <h2>Log In</h2>
-        <form className="login__form" onSubmit={(e) => e.preventDefault()}>
+        <form className="login__form" onSubmit={handleSubmit}>
           <FormGroup
             label="Email"
             id="email"
@@ -20,6 +51,8 @@ const Login = () => {
             type="email"
             placeholder="Enter your email"
             required
+            value={formData.email}
+            onChange={handleChange}
           />
           <FormGroup
             label="Password"
@@ -28,6 +61,8 @@ const Login = () => {
             type="password"
             placeholder="Enter your password"
             required
+            value={formData.password}
+            onChange={handleChange}
           />
           <Button className="btn-primary" type="submit">
             Log in
