@@ -42,9 +42,10 @@ export const useAuth = () => {
 };
 
 export const useForm = () => {
-  const { handleBookingSubmit } = useContext(FormContext);
+  const { handleBookingSubmit, handleReviewSubmit } = useContext(FormContext);
 
   return {
     handleBookingSubmit,
+    handleReviewSubmit,
   };
 };
