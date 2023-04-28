@@ -1,5 +1,4 @@
 import "./global.styles.scss";
-
 import { Route, Routes } from "react-router-dom";
 import MainPage from "./Routes/Main/main.route";
 import Main from "./Components/Main/main.component";
@@ -13,7 +12,16 @@ import Profile from "./Components/Profile/profile.component";
 import Menu from "./Components/Menu/menu.component";
 import Booking from "./Components/Booking/book.component";
 import Reviews from "./Components/Reviews/reviews.component";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <Routes>
       <Route exact path="/" element={<MainPage />}>
