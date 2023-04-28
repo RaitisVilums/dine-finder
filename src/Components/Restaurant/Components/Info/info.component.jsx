@@ -27,7 +27,9 @@ const Info = ({
           <Link className="btn btn-primary" to={"book"}>
             Book
           </Link>
-          <Link className="btn btn-primary">Review</Link>
+          <Link className="btn btn-primary" to={"review"}>
+            Review
+          </Link>
         </div>
         <p
           className={`${

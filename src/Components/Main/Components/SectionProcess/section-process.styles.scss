@@ -29,7 +29,7 @@
     width: 20rem;
     height: 15rem;
     border: 2px solid var(--color-accent);
-    background: var(--color-tertiary-1);
+
     border-radius: 1.5rem;
     padding: 2rem;
     display: flex;
@@ -40,7 +40,14 @@
     text-transform: uppercase;
     font-weight: var(--fw-bold);
     color: var(--color-primary);
-    box-shadow: var(--box-shadow-elevated);
+    box-shadow: var(--box-shadow-medium);
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: var(--box-shadow-elevated);
+    }
   }
 
   &__process--icon {

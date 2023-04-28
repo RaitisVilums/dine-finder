@@ -12,6 +12,7 @@ import Restaurant from "./Components/Restaurant/restaurant.component";
 import Profile from "./Components/Profile/profile.component";
 import Menu from "./Components/Menu/menu.component";
 import Booking from "./Components/Booking/book.component";
+import Reviews from "./Components/Reviews/reviews.component";
 const App = () => {
   return (
     <Routes>
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/restaurants/:id" element={<Restaurant />}>
           <Route path="menu" element={<Menu />} />
           <Route path="book" element={<Booking />} />
+          <Route path="review" element={<Reviews />} />
         </Route>
         <Route path="/profile" element={<Profile />} />
       </Route>

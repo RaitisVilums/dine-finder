@@ -47,7 +47,11 @@ html {
 }
 
 body {
-  background: var(--color-tertiary-1);
+  background: linear-gradient(
+    45deg,
+    var(--color-tertiary-2) 10%,
+    var(--color-tertiary-1) 70%
+  );
   min-height: 100vh;
   position: relative;
 }

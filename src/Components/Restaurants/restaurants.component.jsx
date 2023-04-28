@@ -5,6 +5,7 @@ import RestaurantsHeader from "./Components/Header/header.component";
 import RestaurantsItems from "./Components/RestaurantsItems/restaurants-items.component";
 import AsideItems from "./Components/Aside/aside.component";
 import LoadingElement from "./Components/Loading/loading.component";
+import { motion } from "framer-motion";
 
 import { useRestaurants } from "../../Hooks/useContexts.hook";
 import Button from "../Common/Button/button";
@@ -57,14 +58,21 @@ const Restaurants = () => {
         <div className="restaurants__wrapper">
           <div className="restaurants__container">
             {displayedRestaurants.map((item) => (
-              <RestaurantsItems key={item.id} data={item} />
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.4 }}
+              >
+                <RestaurantsItems data={item} />
+              </motion.div>
             ))}
           </div>
           <aside className="restaurants__promotions">
             <h1 className="restaurants__promotions--title">Check this out!</h1>
             <hr />
             {restaurants.map((item) => (
-              <AsideItems key={item.id} data={item} />
+              <AsideItems data={item} />
             ))}
           </aside>
         </div>

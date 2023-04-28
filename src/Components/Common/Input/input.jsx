@@ -1,7 +1,7 @@
 import React from "react";
 import "./input.styles.scss";
 
-const Input = ({ label, name, type, value, onChange, readOnly }) => {
+const Input = ({ label, name, type, value, onChange, readOnly, className }) => {
   return (
     <div className="form-group">
       {label && <label htmlFor={name}>{label}</label>}
@@ -11,7 +11,7 @@ const Input = ({ label, name, type, value, onChange, readOnly }) => {
         value={value}
         onChange={onChange}
         readOnly={!readOnly}
-        className="form-control"
+        className={`form-control ${className}`}
       />
     </div>
   );
