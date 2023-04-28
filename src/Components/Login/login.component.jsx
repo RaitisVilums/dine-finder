@@ -29,7 +29,7 @@ const Login = () => {
 
     try {
       await loginUser(email, password);
-      navigate("/profile");
+      navigate("/restaurants");
     } catch (error) {
       console.error(`Error - ${error}`);
       setError(error.message);

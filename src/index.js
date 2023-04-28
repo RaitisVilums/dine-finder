@@ -4,6 +4,7 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { RestaurantsProvider } from "./Contexts/restaurants.context";
 import { AuthContextProvider } from "./Contexts/auth.context";
+import { FormContextProvider } from "./Contexts/form.context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -11,7 +12,9 @@ root.render(
     <BrowserRouter>
       <RestaurantsProvider>
         <AuthContextProvider>
-          <App />
+          <FormContextProvider>
+            <App />
+          </FormContextProvider>
         </AuthContextProvider>
       </RestaurantsProvider>
     </BrowserRouter>

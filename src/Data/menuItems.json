@@ -1,0 +1,151 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Cheeseburger",
+      "description": "Juicy beef patty topped with melted cheese, lettuce, tomato, and pickles. Served on a toasted bun.",
+      "price": 9.99,
+      "picture": "https://example.com/cheeseburger.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Margherita Pizza",
+      "description": "Classic Neapolitan-style pizza topped with tomato sauce, mozzarella cheese, and fresh basil.",
+      "price": 12.99,
+      "picture": "https://example.com/margherita-pizza.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Grilled Chicken Sandwich",
+      "description": "Grilled chicken breast topped with bacon, avocado, and garlic aioli. Served on a brioche bun.",
+      "price": 11.99,
+      "picture": "https://example.com/grilled-chicken-sandwich.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Caesar Salad",
+      "description": "Crisp romaine lettuce, croutons, and shaved Parmesan cheese, tossed with classic Caesar dressing.",
+      "price": 7.99,
+      "picture": "https://example.com/caesar-salad.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Fish and Chips",
+      "description": "Beer-battered cod served with fries, tartar sauce, and lemon wedges.",
+      "price": 13.99,
+      "picture": "https://example.com/fish-and-chips.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Pad Thai",
+      "description": "Stir-fried rice noodles with tofu, bean sprouts, scallions, and peanuts, in a sweet and tangy sauce.",
+      "price": 10.99,
+      "picture": "https://example.com/pad-thai.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Mushroom Risotto",
+      "description": "Creamy arborio rice cooked with mushrooms, white wine, and Parmesan cheese.",
+      "price": 14.99,
+      "picture": "https://example.com/mushroom-risotto.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Taco Salad",
+      "description": "Crispy tortilla bowl filled with seasoned ground beef, lettuce, tomato, cheese, and salsa.",
+      "price": 8.99,
+      "picture": "https://example.com/taco-salad.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Veggie Burger",
+      "description": "Plant-based burger patty topped with lettuce, tomato, and vegan mayo. Served on a whole wheat bun.",
+      "price": 10.99,
+      "picture": "https://example.com/veggie-burger.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Pesto Pasta",
+      "description": "Fusilli pasta tossed with homemade pesto sauce, cherry tomatoes, and Parmesan cheese.",
+      "price": 12.99,
+      "picture": "https://example.com/pesto-pasta.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Pesto Pasta",
+      "description": "Fusilli pasta tossed with homemade pesto sauce, cherry tomatoes, and Parmesan cheese.",
+      "price": 12.99,
+      "picture": "https://example.com/pesto-pasta.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Pesto Pasta",
+      "description": "Fusilli pasta tossed with homemade pesto sauce, cherry tomatoes, and Parmesan cheese.",
+      "price": 12.99,
+      "picture": "https://example.com/pesto-pasta.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Steak Frites",
+      "description": "Grilled sirloin steak served with crispy French fries and a side salad.",
+      "price": 19.99,
+      "picture": "https://example.com/steak-frites.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Roasted Chicken",
+      "description": "Half a chicken roasted with herbs and served with mashed potatoes and green beans.",
+      "price": 16.99,
+      "picture": "https://example.com/roasted-chicken.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Spaghetti and Meatballs",
+      "description": "Spaghetti with homemade meatballs and marinara sauce, topped with Parmesan cheese.",
+      "price": 11.99,
+      "picture": "https://example.com/spaghetti-and-meatballs.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Pulled Pork Sandwich",
+      "description": "Slow-cooked pulled pork with BBQ sauce and coleslaw, served on a brioche bun.",
+      "price": 9.99,
+      "picture": "https://example.com/pulled-pork-sandwich.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Chicken Alfredo",
+      "description": "Fettuccine pasta with creamy Alfredo sauce and grilled chicken breast.",
+      "price": 13.99,
+      "picture": "https://example.com/chicken-alfredo.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Greek Salad",
+      "description": "Mixed greens, cucumbers, tomatoes, feta cheese, olives, and red onions, dressed with Greek vinaigrette.",
+      "price": 8.99,
+      "picture": "https://example.com/greek-salad.jpg"
+    },
+    {
+      "id": 19,
+      "name": "BBQ Ribs",
+      "description": "Slow-cooked pork ribs with BBQ sauce, served with baked beans and corn on the cob.",
+      "price": 18.99,
+      "picture": "https://example.com/bbq-ribs.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Shrimp Scampi",
+      "description": "Linguine pasta with garlic butter shrimp, cherry tomatoes, and parsley.",
+      "price": 15.99,
+      "picture": "https://example.com/shrimp-scampi.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Club Sandwich",
+      "description": "Triple-decker sandwich with turkey, ham, bacon, lettuce, tomato, and mayonnaise, served with fries.",
+      "price": 10.99,
+      "picture": "https://example.com/club-sandwich.jpg"
+    }
+  ]
+}

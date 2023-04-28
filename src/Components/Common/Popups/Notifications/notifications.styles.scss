@@ -16,4 +16,6 @@
   color: white;
   font-weight: var(--fw-bold);
   text-transform: uppercase;
+  position: fixed;
+  z-index: 10;
 }

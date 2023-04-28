@@ -11,6 +11,7 @@ import Register from "./Components/Register/register.component";
 import Restaurant from "./Components/Restaurant/restaurant.component";
 import Profile from "./Components/Profile/profile.component";
 import Menu from "./Components/Menu/menu.component";
+import Booking from "./Components/Booking/book.component";
 const App = () => {
   return (
     <Routes>
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/restaurants" element={<Restaurants />} />
         <Route path="/restaurants/:id" element={<Restaurant />}>
           <Route path="menu" element={<Menu />} />
+          <Route path="book" element={<Booking />} />
         </Route>
         <Route path="/profile" element={<Profile />} />
       </Route>

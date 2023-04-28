@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { RestaurantsContext } from "../Contexts/restaurants.context";
 import { AuthContext } from "../Contexts/auth.context";
+import { FormContext } from "../Contexts/form.context";
 
 export const useRestaurants = () => {
   const {
@@ -37,5 +38,13 @@ export const useAuth = () => {
     userData,
     isLoading,
     isLoggedIn,
+  };
+};
+
+export const useForm = () => {
+  const { handleBookingSubmit } = useContext(FormContext);
+
+  return {
+    handleBookingSubmit,
   };
 };
